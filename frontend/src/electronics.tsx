@@ -4,6 +4,9 @@ import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import ZoomInOutlinedIcon from "@mui/icons-material/ZoomInOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const labels: { [index: string]: string } = {
   0.5: "Useless",
@@ -18,17 +21,17 @@ const labels: { [index: string]: string } = {
   5: "Excellent+",
 };
 
-export default function SavedProduct() {
+export default function Electronics() {
   const value = 3.5;
   return (
     <>
-      <div className="flex ml-[25%]">
+      <div className="flex ml-[25%] bg-[#FFF]">
         <div className="flex-col">
           <div className="flex flex-col mt-[100px]">
             <h3 className="font-semibold text-xl text-[#151875]">
-              Хадгалсан бүтээгдэхүүн
+              Электрон бараа
             </h3>
-            <p className="text-[#8A8FB9] text-xs ">8 бүтээгдэхүүн</p>
+            <p className="text-[#8A8FB9] text-xs ">127 бүтээгдэхүүн</p>
           </div>
           <div className="flex ml-[35px] mt-[30px]">
             <div>
@@ -37,7 +40,7 @@ export default function SavedProduct() {
             <div className="flex-col">
               <div className="flex-col  ml-[20px]">
                 <div className="flex items-center gap-5 mt-[5px]">
-                  <h5 className=" text-[#151875] font-semibold text-lg ">
+                  <h5 className=" text-[#151875] font-semibold text-lg  ">
                     Усан ягаан сандал
                   </h5>
 
@@ -68,20 +71,23 @@ export default function SavedProduct() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
                   in est <br /> adipiscing in phasellus non in justo.
                 </p>
-                <Stack direction="row" spacing={1} marginTop={10}>
-                  <Button sx={{
-                    backgroundColor:"#FB2E86",
-                    color:"#FFFFFF",
-                    width:"165"
-                  }} variant="contained" >Худалдан авах</Button>
-                  <Button sx={{
-                    backgroundColor:"#F6F5FF",
-                    color:"#535399",
-                    width:"97"
-                  }} variant="contained" >
-                    Хасах
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: "0px",
+                    marginTop:"80px"
+                  }}
+                >
+                  <Button>
+                    <ShoppingCartOutlinedIcon />
                   </Button>
-                </Stack>
+                  <Button>
+                    <FavoriteBorderOutlinedIcon />
+                  </Button>
+                  <Button>
+                    <ZoomInOutlinedIcon />
+                  </Button>
+                </Box>
               </div>
             </div>
           </div>
