@@ -10,7 +10,7 @@ function Footer2() {
 
     return (
         <footer className="flex justify-center items-center px-16 py-4 w-full text-base font-semibold text-gray-400 whitespace-nowrap bg-violet-100 max-md:px-5 max-md:max-w-full">
-            <div className="flex gap-5 justify-between max-w-full w-[960px] max-md:flex-wrap">
+            <div className="flex gap-5 justify-between max-w-full w-[1200px] max-md:flex-wrap">
                 <div className="my-auto">©ecommerce</div>
                 <div className="flex gap-4">
                     <div style={roundedIconStyle}>
